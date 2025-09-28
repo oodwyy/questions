@@ -9,3 +9,34 @@
 <p style="border-left: 3px solid DarkSlateBlue; padding-left: 10px;">
 В Python хэш-таблицы используются в словарях (dict) и множествах (set). 
 Ключи должны быть неизменяемые, чтобы их хэш-код не менялся. <i>Хэшируемые типы</i> в Python: <code>str</code>, <code>int</code>, <code>float</code>, <code>bool</code>, <code>frozenset</code>, <code>tuple</code>.  <em>Нехэшируемые</em>: <code>list</code>, <code>dict</code>, <code>set</code>. 
+
+<table border="0" style="border-collapse: collapse; width: 100%; margin: 20px auto; font-family: sans-serif; font-size: 14px;">
+    <tr>
+        <th colspan="2">Метод открытой адресации</th>
+        <th colspan="2">Метод цепочек</th>
+    </tr>
+    <tr>
+        <th>+</th>
+        <th>-</th>
+        <th>+</th>
+        <th>-</th>
+    </tr>
+    <tr>
+        <td>Быстрый обход</td>
+        <td>Зависимость от способа обхода</td>
+        <td>Простота реализации</td>
+        <td>Расход памяти на ссылку</td>
+    </tr>
+    <tr>
+        <td>Меньший расход памяти</td>
+        <td>Зависимость от размера внутреннего массива</td>
+        <td></td>
+        <td>Медленный обход</td>
+    </tr>
+    <tr>
+        
+        <td>3.14</td>
+        <td>set</td>
+        <td>{1, 2}</td>
+    </tr>
+</table>
