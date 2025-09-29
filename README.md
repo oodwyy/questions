@@ -9,9 +9,9 @@
 В Python хэш-таблицы используются в словарях (dict) и множествах (set). 
 Ключи должны быть неизменяемые, чтобы их хэш-код не менялся. <i>Хэшируемые типы</i> в Python: <code>str</code>, <code>int</code>, <code>float</code>, <code>bool</code>, <code>frozenset</code>, <code>tuple</code>.  <em>Нехэшируемые</em>: <code>list</code>, <code>dict</code>, <code>set</code>.  
 
-<span style="color: DarkSlateBlue; font-size: 16px"> <ins>__Коллизиця__</ins></span> - ситуация, когда два разных ключа получают одинаковый хэш-код или индекс в хэш-таблице, что требует специальной обработки для их разделения. 
+<span style="color: DarkSlateBlue; font-size: 16px"> <ins>__Коллизия__</ins></span> - ситуация, когда два разных ключа получают одинаковый хэш-код или индекс в хэш-таблице, что требует специальной обработки для их разделения. 
 
-
+**<span style="color: DarkSlateBlue; font-size: 16px"> <ins>__Методы обработки коллизии:__</ins></span>**
 
 <span style="color: DarkSlateBlue"> <ins>1. Открытая адресация</span> - метод обработки коллизий, пр котором данные хранятся в одном массиве, а при коллизии ищется следующая свободная ячейка. 
 
